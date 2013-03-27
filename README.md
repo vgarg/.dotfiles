@@ -1,4 +1,4 @@
-vimrc
-=====
+My vimrc
+========
 
 .vimrc file
