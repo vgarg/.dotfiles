@@ -1,4 +1,5 @@
-My vimrc
-========
+Dotfiles:
 
-.vimrc file
+.vimrc
+.vim
+.bash_profile
