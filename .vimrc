@@ -27,6 +27,8 @@ set expandtab
  
 " Line numbers
 set nu
+set numberwidth=3
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey gui=NONE guifg=236 guibg=NONE
 
 " Status line
 set laststatus=2
