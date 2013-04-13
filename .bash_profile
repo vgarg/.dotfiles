@@ -5,4 +5,3 @@ export PATH=/usr/local/go/bin:$PATH
 export GOROOT=/usr/local/go
 export GOPATH=~/dev/code/go
 export PATH=$GOPATH/bin:$PATH
-export PYTHONPATH=/usr/local/lib/python2.7/site-pacakges:$PYTHONPATH
