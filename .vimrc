@@ -10,6 +10,8 @@ call vundle#rc()
 Bundle 'gmarik/vundle'      
 Bundle 'jnurmine/Zenburn'
 Bundle 'jnwhiteh/vim-golang'
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-notes'
 
 filetype plugin indent on
 syntax on
@@ -52,3 +54,6 @@ set statusline +=%*0x%04B\]         "character under cursor
 
 " Close the scratch buffer
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
+" Set the notes directory
+let g:notes_directories = ['~/dev/notes']

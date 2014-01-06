@@ -8,7 +8,7 @@ ln -s "$DIR"/.vimrc ~/.vimrc
 ln -s ."$DIR"/.bash_profile ~/.bash_profile
 ln -s ."$DIR"/.tmux.conf ~/.tmux.conf
 
-#Create .vim directory
+#Create directories
 mkdir ~/.vim
 mkdir ~/.vim/bundle
 
