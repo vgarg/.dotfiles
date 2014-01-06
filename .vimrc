@@ -1,13 +1,22 @@
+set nocompatible
+filetype on
+filetype off
+
+" Vundle plugin manager
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Plugins
+Bundle 'gmarik/vundle'      
+Bundle 'jnurmine/Zenburn'
+Bundle 'jnwhiteh/vim-golang'
+
+filetype plugin indent on
+syntax on
+
 " Color scheme
 let g:zenburn_high_contrast=1
 colorscheme zenburn
-
-" Golang plugin
-filetype off
-filetype plugin indent off
-set runtimepath+=$GOROOT/misc/vim
-filetype plugin indent on
-syntax on
 
 " Search 
 set incsearch 
@@ -40,3 +49,6 @@ set statusline +=%2*/%L%*               "total lines
 set statusline +=%1*%4v\ %*             "virtual column number
 set statusline +=[%{strlen(&fenc)?&fenc:'none'},  "file encoding
 set statusline +=%*0x%04B\]         "character under cursor
+
+" Close the scratch buffer
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
