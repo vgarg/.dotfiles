@@ -12,6 +12,6 @@ ln -s ."$DIR"/.tmux.conf ~/.tmux.conf
 mkdir ~/.vim
 mkdir ~/.vim/bundle
 
-#Install vundle 
+#Install vundle
 echo "installing Vundle"
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
