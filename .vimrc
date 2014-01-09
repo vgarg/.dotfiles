@@ -53,3 +53,4 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 " Set the notes directory
 let g:notes_directories = ['~/dev/notes']
 let g:notes_suffix = '.txt'
+let g:notes_tab_indents = 0
