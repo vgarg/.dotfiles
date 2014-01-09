@@ -54,3 +54,6 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 let g:notes_directories = ['~/dev/notes']
 let g:notes_suffix = '.txt'
 let g:notes_tab_indents = 0
+
+" let g:notes_list_bullets = 0
+" let g:airline#extensions#tabline#enabled = 1

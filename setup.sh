@@ -5,8 +5,8 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 #Create symlinks
 ln -s "$DIR"/.vimrc ~/.vimrc
-ln -s ."$DIR"/.bash_profile ~/.bash_profile
-ln -s ."$DIR"/.tmux.conf ~/.tmux.conf
+ln -s "$DIR"/.bash_profile ~/.bash_profile
+ln -s "$DIR"/.tmux.conf ~/.tmux.conf
 
 #Create directories
 mkdir ~/.vim
