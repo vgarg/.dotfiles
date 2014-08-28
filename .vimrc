@@ -9,18 +9,26 @@ call vundle#rc()
 " Plugins
 Bundle 'gmarik/vundle'
 Bundle 'jnurmine/Zenburn'
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-notes'
 Bundle 'bling/vim-airline'
+Bundle 'kien/ctrlp.vim'
 
 " golang support
 Bundle 'fatih/vim-go'
 
-"snippets and deps
+" Auto Complete YCM
+Bundle 'Valloric/YouCompleteMe'
+
+" snippets
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
+
+" Git plugin
+Bundle "tpope/vim-fugitive"
 
 filetype plugin indent on
 syntax on
@@ -48,7 +56,6 @@ set tabstop=2
 set expandtab
 
 " Line numbers
-set relativenumber
 set number
 set numberwidth=3
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey gui=NONE guifg=236 guibg=NONE
@@ -64,5 +71,6 @@ let g:notes_directories = ['~/dev/notes']
 let g:notes_suffix = '.txt'
 let g:notes_tab_indents = 0
 
-" let g:notes_list_bullets = 0
-" let g:airline#extensions#tabline#enabled = 1
+" snipmate settings
+imap <C-J> <esc>a<Plug>snipMateNextOrTrigger
+smap <C-J> <Plug>snipMateNextOrTrigger

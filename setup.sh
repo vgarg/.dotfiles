@@ -7,6 +7,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 ln -s "$DIR"/.vimrc ~/.vimrc
 ln -s "$DIR"/.bash_profile ~/.bash_profile
 ln -s "$DIR"/.tmux.conf ~/.tmux.conf
+ln -s "$DIR"/.aliases ~/.aliases
 
 #Create directories
 mkdir ~/.vim
