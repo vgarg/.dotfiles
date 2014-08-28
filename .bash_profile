@@ -7,6 +7,7 @@ export GOROOT=/usr/local/go
 export GOPATH=~/dev/code/go
 export DOCKER_HOST=tcp://
 export PATH=$GOPATH/bin:$PATH
+export $WORK=$GOPATH/src
 set -o vi
 
 source ~/.profile
