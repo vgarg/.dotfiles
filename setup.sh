@@ -17,9 +17,6 @@ mkdir ~/.vim/bundle
 echo "installing Vundle"
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
-#Install homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 #Install silver searcher
 brew install the_silver_searcher
 
