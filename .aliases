@@ -148,8 +148,17 @@ command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.e
 
 # custom aliases
 alias cl="clear"
-alias df="cd ~/dev/code/dockerfiles"
-alias work="cd $WORK && tmux -f ~/.tmux.conf attach"
+#alias work="cd $WORK && tmux -f ~/.tmux.conf attach"
+alias work="cd $WORK && tmux"
 alias vimrc="vim ~/.vimrc"
 alias .ssh="vim ~/.ssh/config"
 alias aliases="vim ~/.aliases"
+
+alias dcup="docker-compose up -d"
+alias dcstop="docker-compose stop"
+alias dcps="docker-compose ps"
+
+alias dps="docker ps "
+alias dpsa="docker ps -a"
+alias dim="docker images"
+alias drm="docker rm"
